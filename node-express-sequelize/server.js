@@ -7,6 +7,10 @@ var User = sequelize.define('User', {
   username: Sequelize.STRING
 });
 
+app.get('/users' , function(req , res){
+	res.send({username: Sequelize.STRING})
+})
+
 module.exports = { 
   app: app,
   User: User

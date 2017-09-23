@@ -11,3 +11,22 @@ module.exports = {
   app: app,
   User: User
 };
+
+
+app.get('/users',
+function(res , req){
+  res.render("users");
+});
+
+app.post("/users" , 
+function(req, res){
+  var str = "insert into (users) values ("+req.body.username + ")";
+  sequelize.query(str , function (err){
+    if(err){
+      throw err;
+    }
+    res.json("SUCESSFUL !!!")
+  })
+})
+
+

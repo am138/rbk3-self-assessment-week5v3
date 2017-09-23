@@ -11,11 +11,15 @@ var User = sequelize.define('User', {
 
 app.get('/users' , function (req, res) {
 	//fetch all users from users table , using user model 
-	//var data = User.findAll();
-    var data = User.findAll().fetch().then((err, data)=>{
+	/*var data = User.findAll({
+		attributes : ['username']
+	});*/
+    User.findAll({
+		attributes : ['username']
+	}).then((err, data) => {
        res.json(data);
     });
-	//res.json(data);
+	/*res.json(data);*/
 })
 
 

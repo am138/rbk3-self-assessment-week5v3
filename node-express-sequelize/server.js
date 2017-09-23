@@ -7,6 +7,13 @@ var User = sequelize.define('User', {
   username: Sequelize.STRING
 });
 
+app.get('./users',function(req,res){
+User.Findall('users')
+.then(function(req,res){
+	res.send('users');
+})
+})
+
 module.exports = { 
   app: app,
   User: User

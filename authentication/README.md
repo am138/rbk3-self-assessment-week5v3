@@ -7,7 +7,7 @@
 
 - Encrypted passwords
 
-encripted password it's more secure but also can hacked because when you want to creat hash password it generate key and stored in database ,hacker when he interd to databse and know the key he can know the orginal password. 
+encripted password it's more secure but also can hacked because when you want to creat hash password it generate key and stored in database ,hacker when he interd to databse and know the key he can know the orginal password. .
 
 
 - Hashed passwords

@@ -9,11 +9,14 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema = 
+var sqlPublisherAuthorSchema = SELECT * FROM publisher
+JOIN author USING (genre);
 // TODO: Write a comment here explaining your choice
 
-var sqlPublisherGenreSchema = 
+var sqlPublisherGenreSchema = SELECT * FROM publisher
+JOIN genre USING (author);
 // TODO: Write a comment here explaining your choice
 
-var sqlAuthorGenreSchema = 
+var sqlAuthorGenreSchema = SELECT * FROM author
+JOIN genre USING (publisher);
 // TODO: Write a comment here explaining your choice

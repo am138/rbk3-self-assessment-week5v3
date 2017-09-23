@@ -11,9 +11,22 @@ var Schemas = {
 
 var sqlPublisherAuthorSchema = 
 // TODO: Write a comment here explaining your choice
+/*
+   Option 6  : 
+     since auther-publisher relationship is many-to-many , we will need a connection table between both id's of the two tables .. 
+
+*/
 
 var sqlPublisherGenreSchema = 
 // TODO: Write a comment here explaining your choice
+/* 
+  Option 4 :
+    for each publisher , one genre will be assigned .. one column inside the publisher references the genre will be enough since it's one-to-many relationship
+*/
 
 var sqlAuthorGenreSchema = 
 // TODO: Write a comment here explaining your choice
+/*
+  Option 6 :
+  since auther-Genre relationship is many-to-many , we will need a connection table between both id's of the two tables .. 
+*/

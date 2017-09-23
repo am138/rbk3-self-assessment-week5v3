@@ -14,6 +14,7 @@ var sqlPublisherAuthorSchema =
 
 var sqlPublisherGenreSchema = 
 // TODO: Write a comment here explaining your choice
+'option 4'becuse the Publisher has one Genre
 
 var sqlAuthorGenreSchema = 
 // TODO: Write a comment here explaining your choice

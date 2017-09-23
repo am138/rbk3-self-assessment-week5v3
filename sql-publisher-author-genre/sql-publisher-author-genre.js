@@ -10,10 +10,10 @@ var Schemas = {
 };
 
 var sqlPublisherAuthorSchema = 
-// TODO: Write a comment here explaining your choice
+// schema.OPTION_6, because it's many to many relation, and many relations are lie, we need middel table,
 
 var sqlPublisherGenreSchema = 
-// TODO: Write a comment here explaining your choice
+// OPTION_4 always forign key in the many side.
 
 var sqlAuthorGenreSchema = 
-// TODO: Write a comment here explaining your choice
+// schema.OPTION_6, because it's many to many relation, and many relations are lie, we need middel table,

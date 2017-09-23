@@ -1,8 +1,7 @@
 var Schemas = {
 	
     
-    authors : varChar(20) NOT NULL ,
-    name : varChar(20) NOT NULL ,
+    Option 5 (below) : becuse we connect many to many 
   
 };
 

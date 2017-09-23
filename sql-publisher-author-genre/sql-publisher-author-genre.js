@@ -9,11 +9,11 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema = 
-// TODO: Write a comment here explaining your choice
+var sqlPublisherAuthorSchema = Option 6
+// because it is many to many relation, so we have a new table has each id from the first one to one id from the second one
 
-var sqlPublisherGenreSchema = 
-// TODO: Write a comment here explaining your choice
+var sqlPublisherGenreSchema = Option 4 
+// it is one to many relation , so we add column to the pub. because it has only one genre, and we cant switch it because each genre has many pub.
 
-var sqlAuthorGenreSchema = 
-// TODO: Write a comment here explaining your choice
+var sqlAuthorGenreSchema = Option 6
+// it is many to many relation so we need new table to made it one to one, if we add it to auth. or genre tables we will have an array.

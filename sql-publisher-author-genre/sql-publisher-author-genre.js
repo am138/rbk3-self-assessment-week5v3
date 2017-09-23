@@ -9,11 +9,26 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema = 
+var sqlPublisherAuthorSchema = Schemas[OPTION_6]
 // TODO: Write a comment here explaining your choice
+/*
+I chossed "Option 6" because each publisher has many authors and each author has 
+many publishers so i need a third or middle table wish is publisher_author to connect
+between them.
 
-var sqlPublisherGenreSchema = 
-// TODO: Write a comment here explaining your choice
+*/
 
-var sqlAuthorGenreSchema = 
+var sqlPublisherGenreSchema = Schemas[OPTION_4]
 // TODO: Write a comment here explaining your choice
+/*
+I chossed "Option 4" because each publisher has one genre and each genre has many publisher 
+so, i need to declare foreign key in publisher wich is id_genre to connect between them.
+*/
+
+var sqlAuthorGenreSchema = Schemas[OPTION_6]
+// TODO: Write a comment here explaining your choice
+/*
+I chossed "Option 6" because each author has many gener and each gener has 
+many authors so i need a third or middle table wish is author_genre to verify the relation 
+of many to many and connect between them
+*/

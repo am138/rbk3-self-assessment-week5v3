@@ -13,6 +13,10 @@ Finally, commit with the comment "SQL"
 
 ### Publisher - Author
 
+<!-- describe('schema for publisher author genre', function() {
+  it('Publisher Author schema should be Option 6', function() {
+    sqlPublisherAuthorSchema.should.equal(Schemas.OPTION_6);
+  }); -->
 ##### Option 0 (below)
 ![pub_auth_option_0](https://cloud.githubusercontent.com/assets/7968370/17832185/d92e9eea-66b1-11e6-9cd5-752d647cdca2.png)
 
@@ -36,7 +40,9 @@ Finally, commit with the comment "SQL"
 
 
 ### Publisher - Genre
-
+<!--   it('Publisher Genre schema should be Option 4', function() {
+    sqlPublisherGenreSchema.should.equal(Schemas.OPTION_4);
+  }); -->
 ##### Option 0 (below)
 ![pub_gen_option_0](https://cloud.githubusercontent.com/assets/7968370/17832207/4b415108-66b2-11e6-9539-421025df2a74.png)
 
@@ -59,7 +65,11 @@ Finally, commit with the comment "SQL"
 ![pub_gen_option_6](https://cloud.githubusercontent.com/assets/7968370/17832213/4b53b8c0-66b2-11e6-8068-e41a67f7118d.png)
 
 ### Author - Genre
-
+<!-- 
+  it('Author Genre schema should be Option 6', function() {
+    sqlAuthorGenreSchema.should.equal(Schemas.OPTION_6);
+  });
+}); -->
 ##### Option 0 (below)
 ![auth_gen_option_0](https://cloud.githubusercontent.com/assets/7968370/17832222/71bf003c-66b2-11e6-9e93-2a1b17108bd7.png)
 

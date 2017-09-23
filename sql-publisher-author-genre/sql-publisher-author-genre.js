@@ -9,11 +9,23 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema = 
+var sqlPublisherAuthorSchema = Schemas.OPTION_6;
 // TODO: Write a comment here explaining your choice
 
-var sqlPublisherGenreSchema = 
+// the relation between publisher & authoer is many to many so we need 
+// a seperate table to concatenate between these two tables
+
+
+var sqlPublisherGenreSchema = Schemas.OPTION_4;
 // TODO: Write a comment here explaining your choice
 
-var sqlAuthorGenreSchema = 
+// the relation between publisher & Genre in one to many 
+// so, every genre has many publisher so we need the id for 
+// publisher to be a forign key in genre
+
+
+var sqlAuthorGenreSchema = Schemas.OPTION_6;
 // TODO: Write a comment here explaining your choice
+
+// the relation between Genre & Author is many to many so we need 
+// a seperate table to concatenate between these two tables

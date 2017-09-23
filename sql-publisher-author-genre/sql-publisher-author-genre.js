@@ -1,19 +1,30 @@
 var Schemas = {
-  FIX_ME: 'wrong answer',
-  OPTION_0: 'option 0',
-  OPTION_1: 'option 1',
-  OPTION_2: 'option 2',
-  OPTION_3: 'option 3',
-  OPTION_4: 'option 4',
-  OPTION_5: 'option 5',
-  OPTION_6: 'option 6'
+	
+    
+    authors : varChar(20) NOT NULL ,
+    name : varChar(20) NOT NULL ,
+  
 };
 
-var sqlPublisherAuthorSchema = 
+var sqlPublisherAuthorSchema = CREATE TABLE sqlPublisherAuthorSchema({
+	id : varChar(20) NOT NULL  PRIMARY KEY,
+	firstName : varChar(255) NOT NULL,
+    lastName : varChar(255) NOT NULL,
+    publisher : varChar(20) REFERENCES Permissions (sqlPublisherGenreSchema)
+})
 // TODO: Write a comment here explaining your choice
 
-var sqlPublisherGenreSchema = 
+var sqlPublisherGenreSchema = CREATE TABLE sqlPublisherGenreSchema({
+	id : varChar(20) NOT NULL  PRIMARY KEY,
+	authors : varChar(20) NOT NULL REFERENCES Permissions (sqlPublisherGenreSchema),
+    name : varChar(20) NOT NULL 
+
+}) 
 // TODO: Write a comment here explaining your choice
 
-var sqlAuthorGenreSchema = 
+var sqlAuthorGenreSchema = CREATE TABLE sqlAuthorGenreSchema({
+ id : varChar(20) NOT NULL  PRIMARY KEY, 
+ publisher : varChar(20) REFERENCES Permissions (sqlPublisherGenreSchema),
+ authors : varChar(20) NOT NULL REFERENCES Permissions (sqlPublisherGenreSchema)
+})
 // TODO: Write a comment here explaining your choice

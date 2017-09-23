@@ -9,11 +9,15 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema = 
+var sqlPublisherAuthorSchema =  Schemas.OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+// Publisher and Author has many to many relationship which needs a join table.
 
-var sqlPublisherGenreSchema = 
+var sqlPublisherGenreSchema =  Schemas.OPTION_4; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+// Publisher and Genre has many to one relationship. the publisher table have a forien key
+// related to the genre id .
 
-var sqlAuthorGenreSchema = 
+var sqlAuthorGenreSchema =  Schemas.OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+// Genre and Author has many to many relationship which needs a join table.

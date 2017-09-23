@@ -14,3 +14,9 @@ User.sync({ force: true })
     });
   });
   
+app.get ('/users', function (req, res){
+  User.findAll ()
+    .then (users => {
+      res.send (JSON.stringify(users));
+    });
+});

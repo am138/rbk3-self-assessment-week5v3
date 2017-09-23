@@ -11,9 +11,22 @@ var Schemas = {
 
 var sqlPublisherAuthorSchema = 
 // TODO: Write a comment here explaining your choice
+/*	I choosed "option 6" because the relationship
+	between the Auther and the Publisher is many to many 
+	so we need the third table "publisher_auther";
+*/
 
 var sqlPublisherGenreSchema = 
 // TODO: Write a comment here explaining your choice
+/*	I choosed "option 4" because the relationship
+	between the Gener and the Publisher is one to many 
+	so we need a forgin key for the Gener id in the 
+	Publisher table;
+*/
 
 var sqlAuthorGenreSchema = 
 // TODO: Write a comment here explaining your choice
+/*	I choosed "option 6" because the relationship
+	between the Auther and the Gener is many to many 
+	so we need the third table "Auther_Gener";
+*/

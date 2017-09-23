@@ -11,9 +11,12 @@ var Schemas = {
 
 var sqlPublisherAuthorSchema = 
 // TODO: Write a comment here explaining your choice
+//option 4
 
 var sqlPublisherGenreSchema = 
 // TODO: Write a comment here explaining your choice
+//option 6
 
 var sqlAuthorGenreSchema = 
 // TODO: Write a comment here explaining your choice
+//option 6

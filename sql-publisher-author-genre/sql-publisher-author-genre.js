@@ -9,11 +9,12 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema = 
+var sqlPublisherAuthorSchema = option4 beacuse the relastion pubisher has many authers so we put the forige key from authers
 // TODO: Write a comment here explaining your choice
 
 var sqlPublisherGenreSchema = 
 // TODO: Write a comment here explaining your choice
+optine 5
 
 var sqlAuthorGenreSchema = 
 // TODO: Write a comment here explaining your choice

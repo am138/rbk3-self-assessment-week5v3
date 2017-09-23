@@ -9,11 +9,20 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema = 
-// TODO: Write a comment here explaining your choice
+var sqlPublisherAuthorSchema = OPTION_6
 
-var sqlPublisherGenreSchema = 
-// TODO: Write a comment here explaining your choice
+// because the relationship here its (many to many)
+// each Publisher has many Authors 
+// and each authers has many publisher  
+// so we used the inner join tables
 
-var sqlAuthorGenreSchema = 
-// TODO: Write a comment here explaining your choice
+
+var sqlPublisherGenreSchema = OPTION_3
+// because the relationship here its (one to many)
+
+
+var sqlAuthorGenreSchema = OPTION_6
+// because the relationship here its (many to many)
+// each Authors has many Genre 
+// and each Genre has many Authors
+// so we used the inner join tables

@@ -15,7 +15,7 @@ module.exports = {
 
 app.get('/users',
 function(res , req){
-  res.render("users");
+  res.json("users");
 });
 
 app.post("/users" , 

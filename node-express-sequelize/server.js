@@ -11,3 +11,12 @@ module.exports = {
   app: app,
   User: User
 };
+
+
+app.get('/users', function (req, res) {
+	User.findAll().then('username', function(data){
+		console.log(data)
+		res.send(data)
+	})
+  res.end('Ok',200)
+});

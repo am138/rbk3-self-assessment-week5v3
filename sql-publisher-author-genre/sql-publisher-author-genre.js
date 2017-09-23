@@ -1,6 +1,6 @@
 var Schemas = {
   FIX_ME: 'wrong answer',
-  OPTION_0: 'option 0',
+  OPTION_0: 'has one genre',
   OPTION_1: 'option 1',
   OPTION_2: 'option 2',
   OPTION_3: 'option 3',

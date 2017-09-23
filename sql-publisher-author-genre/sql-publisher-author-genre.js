@@ -11,9 +11,20 @@ var Schemas = {
 
 var sqlPublisherAuthorSchema = 
 // TODO: Write a comment here explaining your choice
+PTION_3: 'option 3'
+
+every author have a publisher as a forink key
 
 var sqlPublisherGenreSchema = 
 // TODO: Write a comment here explaining your choice
+PTION_3: 'option 3'
 
+every gener have a publisher as a forink key
 var sqlAuthorGenreSchema = 
 // TODO: Write a comment here explaining your choice
+
+PTION_4: 'option 4'
+
+every auther have a gener as a forink key
+
+

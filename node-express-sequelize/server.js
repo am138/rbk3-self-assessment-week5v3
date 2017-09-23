@@ -11,3 +11,19 @@ module.exports = {
   app: app,
   User: User
 };
+
+
+// app.get('/', function (req, res) {
+//   res.send('hello world')
+// })
+
+
+module.exports = {
+  users: {
+    get: function (req, res) {
+      app.get(function(results) {
+        res.send(results);
+      });
+    }
+   }
+}

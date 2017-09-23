@@ -6,6 +6,9 @@
 
 
 - Encrypted passwords
+all pass
 
 
 - Hashed passwords
+all password convert to hash when send from user and convert when arraive 
+to server

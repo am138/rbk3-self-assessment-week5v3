@@ -9,11 +9,24 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema = 
+var sqlPublisherAuthorSchema = Shemas.OPTION_6 ;
 // TODO: Write a comment here explaining your choice
+//because the relation between publisher And author is many to many
+// and in this case we should creat new table contain the primary key (publesher)
+// and the primary key (auther) as forgn keys (combose key)
 
-var sqlPublisherGenreSchema = 
-// TODO: Write a comment here explaining your choice
 
-var sqlAuthorGenreSchema = 
+var sqlPublisherGenreSchema = Shemas.OPTION_4;
 // TODO: Write a comment here explaining your choice
+//because the relation between publisher And genre is many to one
+// and in this case we should add primary key (genre) inside the 
+//publisher table as a forgen key
+
+
+
+
+var sqlAuthorGenreSchema = Shemas.OPTION_6 ;
+// TODO: Write a comment here explaining your choice
+//because the relation between genre And author is many to many
+// and in this case we should creat new table contain the primary key (genre)
+// and the primary key (auther) as forgn keys (combose key)

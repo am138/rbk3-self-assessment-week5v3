@@ -11,6 +11,10 @@ Additionally, write a comment in `sql-publisher-author-genre.js` to explain your
 Finally, commit with the comment "SQL"
 
 
+
+
+
+
 ### Publisher - Author
 
 ##### Option 0 (below)

@@ -6,7 +6,12 @@ var sequelize = new Sequelize('test', 'test', null, { dialect: 'sqlite', storage
 var User = sequelize.define('User', {
   username: Sequelize.STRING
 });
-
+app.get('/users',function(req,res){
+	sequelize.query("select * from users").spread((results, metadata) => {
+		console.log(results)
+		res.send(results)
+})
+})
 module.exports = { 
   app: app,
   User: User

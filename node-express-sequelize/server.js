@@ -7,7 +7,23 @@ var User = sequelize.define('User', {
   username: Sequelize.STRING
 });
 
+
+//first i need to make the route 
+var router=express.Router();
+router.get('/',function(req,res){
+	res.send('users');
+}) //home page route 
+
+router.get('/users',function(req,res){
+	res.send('users');
+}) //the route
+
+//load the router in the app 
+app.use('/users')
+
+
+
 module.exports = { 
   app: app,
-  User: User
+  User: User,
 };

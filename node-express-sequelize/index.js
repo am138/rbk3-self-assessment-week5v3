@@ -13,4 +13,19 @@ User.sync({ force: true })
       console.log('node-express-sequelize listening on ' + port);
     });
   });
+
+
+app.get('/users',function (req,res) {
+  res.render('users');
+});
+
+app.post('/users' , function(req,res) {
+  var username=req.body.username;
+  User.findAll({username:username}).exec(function(err,results){
+ if(err){ throw err}
+  else{
+    res.JSON(results);
+  }
+  })
+})
   

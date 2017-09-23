@@ -10,6 +10,7 @@ var Schemas = {
 };
 
 var sqlPublisherAuthorSchema = 
+//auther has many publisher
 // TODO: Write a comment here explaining your choice
 
 var sqlPublisherGenreSchema = 

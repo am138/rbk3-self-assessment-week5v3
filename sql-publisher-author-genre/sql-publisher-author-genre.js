@@ -12,8 +12,19 @@ var Schemas = {
 var sqlPublisherAuthorSchema = 
 // TODO: Write a comment here explaining your choice
 
+
+
+//I will choose option 4 because the relation here it is one to many
+// and the pecture he make the forign id in publisher from authers
+//so I can select any name  from the authers by the id and select the data from publisher 
+
 var sqlPublisherGenreSchema = 
 // TODO: Write a comment here explaining your choice
 
+//I will choose option 6 because the relation it is many to many.
+
 var sqlAuthorGenreSchema = 
 // TODO: Write a comment here explaining your choice
+
+
+//I will choose option 6 because the relation it is many to many.

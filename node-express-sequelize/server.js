@@ -11,7 +11,7 @@ module.exports = {
   app: app,
   User: User
 };
-
+ 
 app.get('/users', function (req, res) {
 // call sequalize search function
   User.findAll().then(users => {
